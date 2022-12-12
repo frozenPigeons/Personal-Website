@@ -1,0 +1,278 @@
+body {
+    display: grid;
+    background-color: rgb(10, 10, 10);
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#container {
+    height: 140vmax;
+    width: 140vmax;
+    position: absolute;
+}
+
+#info {
+    opacity: 0;
+    z-index: -1;
+    background-color: rgb(10, 10, 10);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+#info.open {
+    z-index: 1;
+    opacity: 1;
+    transition: 1s;
+}
+
+.shape {
+    cursor: pointer;
+    border-radius: 1vmax;
+    position: absolute;
+    transition: transform 800ms ease;
+}
+
+.shape:hover>img {
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+.shape>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 800ms ease,
+        transform 800ms ease;
+}
+
+.shape:nth-child(1) {
+    background-color: rgb(255, 238, 88);
+    height: 14%;
+    width: 20%;
+    left: 5%;
+    top: 5%;
+}
+
+.shape:nth-child(2) {
+    background-color: rgb(66, 165, 245);
+    height: 24%;
+    width: 14%;
+    left: 42%;
+    top: 12%;
+}
+
+.shape:nth-child(3) {
+    background-color: rgb(239, 83, 80);
+    height: 18%;
+    width: 16%;
+    left: 12%;
+    top: 34%;
+}
+
+.shape:nth-child(4) {
+    background-color: rgb(102, 187, 106);
+    height: 16%;
+    width: 12%;
+    left: 45%;
+    top: 48%;
+}
+
+.shape:nth-child(5) {
+    background-color: rgb(171, 71, 188);
+    height: 16%;
+    width: 32%;
+    left: 8%;
+    top: 70%;
+}
+
+.shape:nth-child(6) {
+    background-color: rgb(255, 167, 38);
+    height: 24%;
+    width: 24%;
+    left: 68%;
+    top: 8%;
+}
+
+.shape:nth-child(7) {
+    background-color: rgb(63, 81, 181);
+    height: 16%;
+    width: 20%;
+    left: 50%;
+    top: 74%;
+}
+
+.shape:nth-child(8) {
+    background-color: rgb(141, 110, 99);
+    height: 24%;
+    width: 18%;
+    left: 72%;
+    top: 42%;
+}
+
+.shape:nth-child(9) {
+    background-color: rgb(250, 250, 250);
+    height: 10%;
+    width: 8%;
+    left: 84%;
+    top: 84%;
+}
+
+h1 {
+    position: relative;
+    top: -2%;
+    font-family: 'JetBrains Mono';
+    text-align: center;
+    color: white;
+    font-size: 5em;
+}
+
+.nav {
+    height: 1%;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    font-family: 'JetBrains Mono';
+}
+
+nav ul li a {
+    display: flex;
+    color: white;
+    padding: inherit;
+    flex: 1;
+}
+
+
+.grid-container {
+    display: grid;
+    gap: 25px;
+    top: 15%;
+    left: 5%;
+    position: absolute;
+    grid-template-columns: auto auto auto auto;
+    /* grid colour */
+    background-color: rgb(10, 10, 10);
+    padding: 10px;
+}
+
+
+.card {
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    height: 250px;
+    position: relative;
+    width: 400px;
+    opacity: 0.4;
+}
+
+.card:nth-child(1) {
+    object-fit: cover;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:nth-child(2) {
+    object-fit: cover;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:nth-child(3) {
+    cursor: pointer;
+    object-fit: cover;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:nth-child(4) {
+    object-fit: cover;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:nth-child(5) {
+    object-fit: cover;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:nth-child(6) {
+    object-fit: cover;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:nth-child(7) {
+    object-fit: cover;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:nth-child(8) {
+    object-fit: cover;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:nth-child(9) {
+    object-fit: cover;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:nth-child(10) {
+    object-fit: cover;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:nth-child(11) {
+    object-fit: cover;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:nth-child(12) {
+    object-fit: cover;
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.card:hover {
+    opacity: 2;
+}
+
+.card>h1 {
+    font-size: 1.75em;
+}

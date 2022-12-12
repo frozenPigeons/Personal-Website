@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mujtaba Kashif - frozen_pigeons</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="My personal portfolio applying for a web-dev position">
+        <meta name="keywords" content="Mujtaba, Kashif, Mujtaba Kashif, Portfolio, Web development">
+        <meta name="author" content="Mujtaba Kashif">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="main_page.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Poppins&family=Roboto+Mono&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body class="background">
+        <h1 class="header">Mujtaba Kashif</h1>
+        <ul class="menu">
+            <div class="toggle">
+                <ion-icon name="add-outline"></ion-icon>
+            </div>
+            <li style="--i:0;--clr:#ff2972;">
+                <a href="contact.html"><ion-icon name="chatbox-ellipses-outline"></ion-icon></a>
+            </li>
+            <li style="--i:1;--clr:#fee800;">
+                <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
+            </li>
+            <li style="--i:2;--clr:#00b0fe;">
+                <a href="projects.html"><ion-icon name="color-palette-outline"></ion-icon></a>
+            </li>
+        </ul>
+        <h1 class="header2">frozen_pigeons</h1>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            let toggle = document.querySelector('.toggle');
+            let menu = document.querySelector('.menu');
+            let background = document.querySelector('.background');
+            let header = document.querySelector('.header');
+            let headers = document.querySelector('.header2');
+            toggle.onclick = function(){
+                menu.classList.toggle('active');
+                background.classList.toggle('active');
+                header.classList.toggle('active');
+                headers.classList.toggle('active');
+            }
+
+        </script>
+    </body>
+</html>
